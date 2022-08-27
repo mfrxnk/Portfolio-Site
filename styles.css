@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding-top: 1em;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+header h1 {
+    position: relative;
+    left: 0.5em;
+    width: 25%;
+}
+
+.navigation {
+    width: 100%;
+    margin-right: 30px;
+    padding-right: 30px;
+}
+
+.navigation > ul {
+    position: relative;
+    left: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation > ul > li {
+    padding: 0 20px;
+    list-style: none;
+}
+
+main {
+    position: relative;
+    top: 100px;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+}
+
+.contact-me > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me > ul > li{
+    list-style: none;
+}
+
+.about-me {
+    padding: 7.5em 0;
+    background-color: #0e1111;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-me > .text-wrapper {
+    width: 50%;
+    font-size: 20px;
+}
+
+.about-me > img {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-me > .text-wrapper > h2 {
+    padding-bottom: 1em;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.about-me > .text-wrapper > p {
+    margin: 1.5em;
+    font-size: 1.25em;
+}
+
+.portfolio {
+    padding: 0 4.5em 4.5em 4.5em;
+}
+
+.portfolio h2{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.projects-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.project { /* Add Border */
+    padding: 4em;
+}
+
+.project h3 {
+    text-align: center;
+}
+
+.project img, .project p {
+    padding: 1em 0;
+}
+
+.contact-me {
+    padding-bottom: 1em;
+    background-color: #0e1111;
+    color: #fff;
+}
+
+.contact-me h3 { /* Add glowing animation */
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.5em;
+}
+
+.contact-me p {
+    padding-top: 2em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.socials {
+    position: relative;
+    padding: 1.25em 0;
+}
+
+.socials > li {
+    font-size: 3.5em;
+    padding: 0.5em;
+}
+
+.socials>li>a {
+    color: #17C3B2;
+}
+
+.socials > li > a:visited {
+    color: #FEF9EF;
+}
+
+@keyframes glowingIcons {
+    0% {
+        text-shadow: 0 0 30px #227C9D;
+    }
+    25% {
+        text-shadow: 0 0 30px #17C3B2;
+    }
+    50% {
+        text-shadow: 0 0 30px #FFCB77;
+    }
+    75% {
+        text-shadow: 0 0 30px #FEF9EF;
+    }
+    100% {
+        text-shadow: 0 0 30px #FE6D73;
+    }
+}
+
+.facebook {
+    animation-name: glowingIcons;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: -1.5s;
+}
+
+.twitter {
+    animation-name: glowingIcons;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: -2.5s;
+}
+
+.instagram {
+    animation-name: glowingIcons;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+}
+
+.github {
+    animation-name: glowingIcons;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
